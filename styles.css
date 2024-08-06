@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 78px - 48px);
+  }
+  
+
+section {
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+}
+
+/* @media (max-width: 768px) {
+    footer {
+        top: 200px;
+    }
+} */
