@@ -1,6 +1,7 @@
 main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     height: calc(100vh - 78px - 48px);
   }
   
@@ -11,12 +12,32 @@ section {
     margin: 0 auto;
     width: 80%;
     text-align: center;
+    animation: fadeIn 1s;
 }
 
 footer {
     position: relative;
 }
 
+.card {
+    position: relative;
+    --bulma-card-color: var(--bulma-text);
+    --bulma-card-background-color: var(--bulma-scheme-main);
+    --bulma-card-shadow: var(--bulma-shadow);
+    --bulma-card-radius: 0.75rem;
+    --bulma-card-header-background-color: transparent;
+    --bulma-card-header-color: var(--bulma-text-strong);
+    --bulma-card-header-padding: 0.75rem 1rem;
+    --bulma-card-header-shadow: 0 0.125em 0.25em hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), 0.1);
+    --bulma-card-header-weight: var(--bulma-weight-bold);
+    --bulma-card-content-background-color: transparent;
+    --bulma-card-content-padding: 1.5rem;
+    --bulma-card-footer-background-color: transparent;
+    --bulma-card-footer-border-top: 1px solid var(--bulma-border-weak);
+    --bulma-card-footer-padding: 0.75rem;
+    --bulma-card-media-margin: var(--bulma-block-spacing);
+  }
+  
 /* @media (max-width: 768px) {
     footer {
         top: 200px;
