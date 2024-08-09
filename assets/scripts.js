@@ -28,3 +28,49 @@ const questionsandAnswers = [
     {question: "It's your cheat day. Which would you rather indulge in?", answer1: "Ice Cream", answer2: "Spicy Wings"},
     {question: "Time to do some grocery shopping. Where are you buying from?", answer1: "Costco", answer2: "Local Market/General Store"},
 ]
+
+// code for button display
+let answerButtonOne = document.getElementById('answerButtonOne');
+let answerButtonTwo = document.getElementById('answerButtonTwo');
+let questionText = document.getElementById('questionText');
+
+function showAnswerButtonTwo() {
+    answerButtonTwo.style.display = 'flex';
+}
+
+answerButtonOne.addEventListener('click', showAnswerButtonTwo);
+
+let questionIndex = 0;
+
+// code for displaying questions
+function displayNextQuestion() {
+    if (questionIndex < questionsandAnswers.length) {
+        questionText.textContent = questionsandAnswers[questionIndex].question;
+        questionIndex++;
+    } else {
+        // End of questions
+        questionText.textContent = "Congratulations!";
+        answerButtonOne.style.display = 'none';
+        answerButtonTwo.style.display = 'none';
+    }
+}
+
+answerButtonOne.addEventListener('click', displayNextQuestion);
+answerButtonTwo.addEventListener('click', displayNextQuestion);
+
+// code for updating answer buttons
+
+let answer1Index = 0;
+let answer2Index = 0;
+
+function updateAnswerButtons() {
+    if (answer1Index < questionsandAnswers.length && answer2Index < questionsandAnswers.length) {
+        answerButtonOne.textContent = questionsandAnswers[answer1Index].answer1;
+        answerButtonTwo.textContent = questionsandAnswers[answer2Index].answer2;
+        answer1Index++;
+        answer2Index++;
+    }
+}
+
+answerButtonOne.addEventListener('click', updateAnswerButtons);
+answerButtonTwo.addEventListener('click', updateAnswerButtons);

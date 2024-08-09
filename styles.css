@@ -19,8 +19,14 @@ footer {
     position: relative;
 }
 
+#answerButtonOne{
+    display: flex;
+    margin: 20px;
+}
+
 #answerButtonTwo{
     display: none;
+    margin: 20px;
 }
 
 .card {
