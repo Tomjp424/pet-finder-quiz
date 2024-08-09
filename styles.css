@@ -19,6 +19,10 @@ footer {
     position: relative;
 }
 
+#answerButtonTwo{
+    display: none;
+}
+
 .card {
     position: relative;
     --bulma-card-color: var(--bulma-text);
