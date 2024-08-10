@@ -17,26 +17,34 @@
       </h1>
     </header>
    
-<main class="is-flex is-flex-direction-row" >
+    <main class="columns is-variable is-8">
+      <!-- Left Sidebar -->
+      <div class="column is-one-fifth sidebar">
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar"></div>
+      </div>
+      </div>
 
-    <section class="section is-flex-direction-column is-mobile"  style="height:375px">
-
-        <div class="card has-text-centered">
+      <!-- Main Content -->
+      <div class="column main-content">
+        <section class="section is-flex-direction-column is-mobile" style="height:375px">
+          <div class="card has-text-centered">
             <h2 class="title is-3" id="questionText">
-                Ready to start?
+              Ready to start?
             </h2>
             <div class="columns is-justify-content-center mt-6 is-size-4-mobile">
               <button class="button is-primary is-large" id="answerButtonOne">Start Quiz</button>
               <button class="button is-primary is-large" id="answerButtonTwo">Start Quiz</button>
+            </div>
           </div>
-        </div>  
-            
-        
-        
-        
-    </section>
+        </section>
+      </div>
 
-</main>
+      <!-- Right Sidebar -->
+      <div class="column is-one-fifth sidebar">
+        <p>Pervious Animal</p>
+      </div>
+    </main>
 
   <footer class="column is-narrow has-text-centered has-background-primary is-mobile is is-flex-shrink-2">
     <div>

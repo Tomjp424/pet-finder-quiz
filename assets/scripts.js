@@ -74,3 +74,12 @@ function updateAnswerButtons() {
 
 answerButtonOne.addEventListener('click', updateAnswerButtons);
 answerButtonTwo.addEventListener('click', updateAnswerButtons);
+
+function updateProgressBar(percentage) {
+    const progressBar = document.getElementById('progressBar');
+    progressBar.style.height = percentage + '%';
+    progressBar.textContent = percentage + '%';
+}
+
+// Example usage:
+updateProgressBar(60); // Updates the progress bar to 50%
