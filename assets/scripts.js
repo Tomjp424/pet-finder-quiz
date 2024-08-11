@@ -49,7 +49,7 @@ function displayNextQuestion() {
         questionText.textContent = questionsAndAnswers[questionIndex].question;
     } else {
         // End of questions
-        questionText.textContent = "Congratulations!";
+        questionText.textContent = `Congratulations! Your perfect pet is a ${matchingAnimal}!`;
         answerButtonOne.style.display = 'none';
         answerButtonTwo.style.display = 'none';
     }
@@ -70,16 +70,16 @@ answerButtonOne.addEventListener('click', function() {
     showAnswerButtonTwo();
     answerOneValue();
     questionIndex++;
+    findMatchingAnimal();
     displayNextQuestion();
     updateAnswerButtons();
-    findMatchingAnimal();
 });
 answerButtonTwo.addEventListener('click', function() {
     answerTwoValue();
     questionIndex++;
+    findMatchingAnimal();
     displayNextQuestion();
     updateAnswerButtons();
-    findMatchingAnimal();
 });
 
 // Code for applying values to userData on answer given
@@ -110,3 +110,12 @@ function findMatchingAnimal() {
         }
     }
 }
+
+function updateProgressBar(percentage) {
+    const progressBar = document.getElementById('progressBar');
+    progressBar.style.height = percentage + '%';
+    progressBar.textContent = percentage + '%';
+}
+
+// Example usage:
+updateProgressBar(60); // Updates the progress bar to 50%
