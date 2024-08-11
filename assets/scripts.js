@@ -117,5 +117,21 @@ function updateProgressBar(percentage) {
     progressBar.textContent = percentage + '%';
 }
 
-// Example usage:
-updateProgressBar(60); // Updates the progress bar to 50%
+let questionAnswered = -1;
+const totalQuestions = questionsAndAnswers.length;
+
+// This function is called when the user clicks on an answer button. 
+// It updates the progress bar with the calculated percentage of questions answered.
+function handleAnswerButtonClick() {
+    questionAnswered++;
+    const percentage = (questionAnswered / totalQuestions) * 100;
+    updateProgressBar(percentage);
+}
+
+let answerButtons = document.querySelectorAll('button.answerButton');
+
+answerButtons.forEach((btn) => {
+    btn.addEventListener('click', function() {
+        handleAnswerButtonClick()
+});
+});
