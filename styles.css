@@ -75,6 +75,10 @@ footer {
     
 }
 
+#previousAnimalSidebar {
+    flex-direction: column;
+}
+
 #animalShowcase{
 
 }
