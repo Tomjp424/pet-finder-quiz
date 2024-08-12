@@ -1,22 +1,50 @@
+html, body {
+    height: 100%;    
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 main {
     display: flex;
+    flex:1;
     flex-wrap: wrap;
     flex-direction: row;
-    height: calc(100vh - 78px - 48px);
+    
   }
   
 
 section {
     position: relative;
-    top: 100px;
+    display: flex;
     margin: 0 auto;
     width: 80%;
     text-align: center;
     animation: fadeIn 1s;
+    
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    
+    
+  
 }
 
 footer {
     position: relative;
+    
+    width: 100%;
+    padding: 1rem 0;
+
 }
 
 #answerButtonOne{
@@ -30,7 +58,7 @@ footer {
 
 #answerButtonTwo{
     display: none;
-    width: 400px;
+    width: 350px;
     white-space: normal;
     flex-wrap: wrap;
     margin: 20px;
@@ -38,6 +66,7 @@ footer {
 
 .card {
     position: relative;
+    display: flex;
     height: 400px;
     width: 950px;
     flex-wrap: wrap;
@@ -50,7 +79,7 @@ footer {
     margin: auto;
     justify-content: center;
     align-items: center;
-    
+   
 }
 
 .progress-container {
@@ -60,6 +89,7 @@ footer {
     border-radius: 20px;
     margin: 20px 0;
     position: relative;
+    
 }
 
 .progress-bar {
@@ -79,16 +109,54 @@ footer {
     flex-direction: column;
 }
 
-#animalShowcase{
-
+.animalShowcase{
+   
+    display:flex;
+    justify-content: center;
+    text-align: center;
+   
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
+.button{
+    display:flex;
+}
 
-    .sidebar, .main-content {
+@media screen and (max-width: 1840px) {
+   .sidebar{
+        width: 25%;
+   }
+    .main-content{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar{
+        width: 25%;
+   }
+    
+    .main-content{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .sidebar{
+        display: none;
+   }
+    
+    .main-content{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .sidebar{
+        display: none;
+   }
+    
+    .main-content{
         width: 100%;
     }
 }

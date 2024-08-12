@@ -10,14 +10,15 @@
 
   <body>
 
-  
-    <header class="column is-flex-direction-column is-fullheight has-text-centered is-mobile has-background-primary">
+<div class="wrapper">
+    <header class="header is-flex-direction-column is-fullheight has-text-centered is-mobile has-background-primary">
       <h1 class="title is-1">
         Find Your Perfect Pet Quiz
       </h1>
     </header>
    
     <main class="columns is-variable is-8">
+ 
       <!-- Left Sidebar -->
       <div class="column is-one-fifth sidebar">
         <div class="progress-container">
@@ -28,11 +29,11 @@
       <!-- Main Content -->
       <div class="column main-content">
         <section class="section is-flex-direction-column is-mobile" style="height:375px">
-          <div class="card has-text-centered">
+          <div class="card is-flex-direction-column is-mobile">
             <h2 class="title is-3" id="questionText">
               Ready to start?
             </h2>
-            <div class="columns is-justify-content-center mt-6 is-size-4-mobile">
+            <div class="columns is-flex is-justify-content-center">
               <button class="button is-primary is-large answerButton" id="answerButtonOne">Start Quiz</button>
               <button class="button is-primary is-large answerButton" id="answerButtonTwo">Start Quiz</button>
             </div>
@@ -43,13 +44,13 @@
 
       <!-- Right Sidebar -->
       <div class="column is-one-fifth sidebar" id="previousAnimalSidebar">
-        <p id="previousAnimalText">Pervious Animal</p>
+        <p class="animalShowcase" id="previousAnimalText">Pervious Animal</p>
         <img id="previousAnimalImage" src="#" alt="Your previously selected animal" style="display: none;">
       </div>
     </main>
 
-  <footer class="column is-narrow has-text-centered has-background-primary is-mobile is is-flex-shrink-2">
-    <div>
+  <footer class="footer has-text-centered is-mobile is-flex-shrink-2">
+    <div class="content has-text-centered has-background-">
         <p>
           Created by:
           <a href="https://github.com/Tomjp424" target="_blank">Thomas</a>
@@ -57,7 +58,9 @@
           <a href="https://github.com/pauletters" target="_blank">Ryan</a>
         </p>
     </div>
+
   </footer>
     <script src="./assets/scripts.js"></script>
+</div>
   </body>
 </html>
