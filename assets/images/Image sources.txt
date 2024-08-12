@@ -1,0 +1,16 @@
+Capybara: https://commons.wikimedia.org/wiki/File:Hydrochoeris_hydrochaeris_in_Brazil_in_Petr%C3%B3polis,_Rio_de_Janeiro,_Brazil_09.jpg
+Lemur: https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur,_Lemur_catta.jpg
+Liger: https://commons.wikimedia.org/wiki/File:ALiger.jpg
+Mongoose: https://commons.wikimedia.org/wiki/File:Dwarf_mongoose_Korkeasaari_zoo.jpg
+Blue whale: https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg
+Poison Dart Frog: https://commons.wikimedia.org/wiki/File:Dendrobates_azureus_qtl1.jpg
+Anaconda: https://commons.wikimedia.org/wiki/File:Anaconda_jaune_34.JPG
+Piranha: https://commons.wikimedia.org/wiki/File:Serrasalmus-nattereri-2.jpg
+Horse: https://commons.wikimedia.org/wiki/File:White_horse_in_field.jpg
+Ferret: https://commons.wikimedia.org/wiki/File:Ferret_2008.png
+Boar: https://commons.wikimedia.org/wiki/File:Wildschwein,_N%C3%A4he_Pulverstampftor_(cropped).jpg
+Badger: https://commons.wikimedia.org/wiki/File:Badger_(Meles_meles),_Rothiemurchus_-_geograph.org.uk_-_3609898.jpg
+Seal: https://commons.wikimedia.org/wiki/File:Grey_seal_animal_halichoerus_grypus.jpg
+Gecko: https://commons.wikimedia.org/wiki/File:Phelsuma_l._laticauda.jpg#file
+Alligator: https://commons.wikimedia.org/wiki/File:American_Alligator_(Alligator_mississippiensis)_Chambers_Co._Texas._photo_W._L._Farr.jpg
+Scorpion: https://commons.wikimedia.org/wiki/File:Black_scorpion.jpg
