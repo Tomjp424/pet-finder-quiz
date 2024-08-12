@@ -77,6 +77,7 @@ answerButtonOne.addEventListener('click', function() {
     findMatchingAnimal();
     displayNextQuestion();
     updateAnswerButtons();
+    handleAnswerButtonClick();
 });
 answerButtonTwo.addEventListener('click', function() {
     answerTwoValue();
@@ -84,6 +85,7 @@ answerButtonTwo.addEventListener('click', function() {
     findMatchingAnimal();
     displayNextQuestion();
     updateAnswerButtons();
+    handleAnswerButtonClick();
 });
 
 // Code for applying values to userData on answer given
@@ -122,9 +124,6 @@ function updateProgressBar(percentage) {
     progressBar.textContent = percentage + '%';
 }
 
-// Example usage:
-updateProgressBar(60); // Updates the progress bar to 50%
-
 // Pulling previous animal from localStorage on page load
 if(previousAnimal !== null) {
     previousAnimalText = document.querySelector("#previousAnimalText");
@@ -134,3 +133,24 @@ if(previousAnimal !== null) {
     previousAnimalImage.src = previousAnimal[1];
     previousAnimalImage.style.display = "flex"
 }
+
+
+// This function is called when the user clicks on an answer button. 
+// It updates the progress bar with the calculated percentage of questions answered.
+const totalQuestions = questionsAndAnswers.length;
+
+function handleAnswerButtonClick() {
+    const percentage = (questionIndex / totalQuestions) * 100;
+    updateProgressBar(percentage);
+}
+
+//I really like this method for handling the answer button functions. Let's try to find a way to make this work with all the functions + the one extra that buttonOne has. I've commented it out for now just for the sake of testing. Let's talk about it tonight (Monday).
+/*
+let answerButtons = document.querySelectorAll('button.answerButton');
+
+answerButtons.forEach((btn) => {
+    btn.addEventListener('click', function() {
+        handleAnswerButtonClick()
+});
+});
+*/
