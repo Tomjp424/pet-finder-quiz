@@ -28,7 +28,7 @@
 
       <!-- Main Content -->
       <div class="column main-content">
-        <section class="section is-flex-direction-column is-mobile" style="height:375px">
+        <section id="questionCard" class="section is-flex-direction-column is-mobile" style="height:375px">
           <div class="card is-flex-direction-column is-mobile">
             <h2 class="title is-3" id="questionText">
               Ready to start?
@@ -37,8 +37,14 @@
               <button class="button is-primary is-large answerButton" id="answerButtonOne">Start Quiz</button>
               <button class="button is-primary is-large answerButton" id="answerButtonTwo">Start Quiz</button>
             </div>
-            <img id="matchingAnimalImage" src="#" alt="Your perfect pet!" style="display: none;">
           </div>
+        </section>
+        <section id="endingPage" style="display: none;">
+          <h1 id="congratsText">Congrats!</h1>
+          <img id="matchingAnimalImage" src="/assets/images/blue-whale.jpg" alt="Your perfect pet!">
+          <h2 id="funFact">Fun Fact: Badgers are cute but will tear your throat out</h2>
+          <button id="creditsButton" class="button is-primary is-large endingButtons">Credits & Links</button>
+          <button id="startOverButton" class="button is-primary is-large endingButtons">Take The Quiz Again</button>
         </section>
       </div>
 
@@ -50,6 +56,7 @@
       </div>
     </main>
 
+    <!-- Footer -->
   <footer class="footer has-text-centered is-mobile is-flex-shrink-2">
     <div class="content has-text-centered has-background-">
         <p>
@@ -61,7 +68,42 @@
     </div>
 
   </footer>
-    <script src="./assets/scripts.js"></script>
 </div>
+
+<!-- Modal -->
+ <div class="modal">
+  <div class="modal-background" style="z-index: -1;"></div>
+  <div class="model-content has-background-primary py-6 px-6" style="border: 15px solid gray; position: relative;">
+    <button id="modalCloseButton">✖</button>
+    <h1 class="title mb-6">Created By Thomas, Branden, and Ryan</h3>
+    <h2>Find the Github repo <a href="https://github.com/Tomjp424/pet-finder-quiz"><u>here</u></a></h2>
+    <h3><u>Our Githubs</u></h3>
+    <ul>
+      <li class="ul"><a href="https://github.com/Tomjp424">Thomas</a></li>
+      <li class="ul"><a href="https://github.com/CamBC-Lab">Branden</a></li>
+      <li class="ul"><a href="https://github.com/pauletters">Ryan</a></li>
+    </ul>
+    <h3><u>All images used are either public domain or licensed for public use.</u></h3>
+    <ul>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Hydrochoeris_hydrochaeris_in_Brazil_in_Petr%C3%B3polis,_Rio_de_Janeiro,_Brazil_09.jpg">Capybara</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur,_Lemur_catta.jpg">Lemur</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:ALiger.jpg">Liger</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Dwarf_mongoose_Korkeasaari_zoo.jpg">Mongoose</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg">Blue Whale</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Dendrobates_azureus_qtl1.jpg">Poison Dart Frog</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Anaconda_jaune_34.JPG">Anaconda</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Serrasalmus-nattereri-2.jpg">Piranha</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:White_horse_in_field.jpg">Horse</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Ferret_2008.png">Ferret</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Wildschwein,_N%C3%A4he_Pulverstampftor_(cropped).jpg">Boar</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Badger_(Meles_meles),_Rothiemurchus_-_geograph.org.uk_-_3609898.jpg">Badger</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Grey_seal_animal_halichoerus_grypus.jpg">Seal</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Phelsuma_l._laticauda.jpg#file">Gecko</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:American_Alligator_(Alligator_mississippiensis)_Chambers_Co._Texas._photo_W._L._Farr.jpg">Alligator</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Black_scorpion.jpg">Scorpion</a></li>
+    </ul>
+  </div>
+ </div>
+<script src="./assets/scripts.js"></script>
   </body>
 </html>

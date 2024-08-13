@@ -72,7 +72,7 @@ footer {
     position: relative;
     display: flex;
     height: 400px;
-    width: 950px;
+    /* width: 950px; */
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between
@@ -129,6 +129,62 @@ footer {
     font-size: 2.5rem;
 }
 
+#endingPage {
+    flex-direction: column;
+}
+
+#congratsText{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#matchingAnimalImage{
+    margin: 15px 0;
+}
+
+#funFact {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0 30px 0;
+}
+
+.endingButtons {
+    margin: 30px 0;
+}
+
+.modal h1,
+.modal h2,
+.modal h3,
+.modal p,
+.modal ul {
+    color: aliceblue;
+    font-weight: 800;
+}
+
+.modal h1 {
+    font-size: 2.5rem;
+}
+
+.modal h2 {
+    font-size: 2rem;
+}
+
+.modal h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#modalCloseButton {
+    display: none;
+    color: black;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+
 @media screen and (max-width: 1840px) {
     #answerButtonOne {
         font-size: 1.1rem;
@@ -148,6 +204,12 @@ footer {
    }
     .main-content{
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #modalCloseButton {
+        display: inline-block;
     }
 }
 
