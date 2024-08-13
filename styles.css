@@ -107,6 +107,8 @@ footer {
 
 #previousAnimalSidebar {
     flex-direction: column;
+    margin: 30px;
+    display: flex;
 }
 
 .animalShowcase{
