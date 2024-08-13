@@ -128,10 +128,12 @@ function updateProgressBar(percentage) {
 if(previousAnimal !== null) {
     previousAnimalText = document.querySelector("#previousAnimalText");
     previousAnimalImage = document.querySelector("#previousAnimalImage");
+    previousText = document.querySelector("#prevText");
 
     previousAnimalText.textContent = previousAnimal[0];
     previousAnimalImage.src = previousAnimal[1];
-    previousAnimalImage.style.display = "flex"
+    previousAnimalImage.style.display = "flex";
+    previousText.style.display = "flex";
 }
 
 
