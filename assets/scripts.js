@@ -15,7 +15,7 @@ const animalArray = [
     {name: "Anaconda", image: "./assets/images/anaconda.jpg", isExotic: true, isFriendly: false, isFurry: false, isLarge: true},
     {name: "Piranha", image: "./assets/images/piranha.jpg", isExotic: true, isFriendly: false, isFurry: false, isLarge: false},
     {name: "Horse", image: "./assets/images/horse.jpg", isExotic: false, isFriendly: true, isFurry: true, isLarge: true},
-    {name: "Ferret", image: "./assets/images/ferret.jpg", isExotic: false, isFriendly: true, isFurry: true, isLarge: false},
+    {name: "Ferret", image: "./assets/images/ferret.png", isExotic: false, isFriendly: true, isFurry: true, isLarge: false},
     {name: "Boar", image: "./assets/images/boar.jpg", isExotic: false, isFriendly: false, isFurry: true, isLarge: true},
     {name: "Badger", image: "./assets/images/badger.jpg", isExotic: false, isFriendly: false, isFurry: true, isLarge: false},
     {name: "Seal", image: "./assets/images/seal.jpg", isExotic: false, isFriendly: true, isFurry: false, isLarge: true},
@@ -32,11 +32,15 @@ const questionsAndAnswers = [
 let questionIndex = -1;
 let matchingAnimal = [];
 let previousAnimal = JSON.parse(localStorage.getItem("previousAnimal"));
+const questionCard = document.querySelector("#questionCard");
+const endingPage = document.querySelector("#endingPage");
+const congratsText = document.querySelector("#congratsText");
+const funFact = document.querySelector("#funFact");
 
 // code for button display
-let answerButtonOne = document.getElementById('answerButtonOne');
-let answerButtonTwo = document.getElementById('answerButtonTwo');
-let questionText = document.getElementById('questionText');
+const answerButtonOne = document.getElementById('answerButtonOne');
+const answerButtonTwo = document.getElementById('answerButtonTwo');
+const questionText = document.getElementById('questionText');
 
 function showAnswerButtonTwo() {
     if (questionIndex === -1)
@@ -51,9 +55,9 @@ function displayNextQuestion() {
         questionText.textContent = questionsAndAnswers[questionIndex].question;
     } else {
         // End of questions
-        questionText.textContent = `Congratulations! Your perfect pet is a ${matchingAnimal[0]}!`;
-        answerButtonOne.style.display = 'none';
-        answerButtonTwo.style.display = 'none';
+        congratsText.textContent = `Congratulations! Your perfect pet is a ${matchingAnimal[0]}!`;
+        questionCard.style.display = "none";
+        endingPage.style.display = "flex";
         matchingAnimalImage.src = matchingAnimal[1];
         matchingAnimalImage.style.display = "flex";
     }
@@ -172,3 +176,28 @@ answerButtons.forEach((btn) => {
 });
 });
 */
+
+// Modal
+const creditsButton = document.querySelector("#creditsButton");
+const modalContent = document.querySelector(".modal");
+const modalBG = document.querySelector(".modal-background");
+const modalCloseButton = document.querySelector("#modalCloseButton");
+
+creditsButton.addEventListener("click", function() {
+    modalContent.classList.add("is-active");
+});
+
+modalBG.addEventListener("click", function() {
+    modalContent.classList.remove("is-active");
+});
+
+modalCloseButton.addEventListener("click", function() {
+    modalContent.classList.remove("is-active");
+});
+
+// Start Over Button
+const startOverButton = document.querySelector("#startOverButton");
+
+startOverButton.addEventListener("click", function() {
+    location.reload();
+});
