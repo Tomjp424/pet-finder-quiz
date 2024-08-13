@@ -10,6 +10,7 @@ html, body {
 }
 
 main {
+    
     display: flex;
     flex:1;
     flex-wrap: wrap;
@@ -22,13 +23,14 @@ section {
     position: relative;
     display: flex;
     margin: 0 auto;
-    width: 80%;
+    
     text-align: center;
     animation: fadeIn 1s;
     
 }
 
 .main-content {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,7 +52,7 @@ footer {
 #answerButtonOne{
     display: flex;
     flex-wrap: wrap;
-    width:550px;
+    width: 250px;
     height: 200px;
     white-space: normal;
     margin: 20px;
@@ -59,7 +61,7 @@ footer {
 
 #answerButtonTwo{
     display: none;
-    width: 550px;
+    width: 250px;
     white-space: normal;
     flex-wrap: wrap;
     margin: 20px;
@@ -77,6 +79,7 @@ footer {
   }
   
   .sidebar {
+    width: 25%;
     display: flex;
     margin: auto;
     justify-content: center;
