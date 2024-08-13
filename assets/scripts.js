@@ -82,6 +82,7 @@ answerButtonOne.addEventListener('click', function() {
     displayNextQuestion();
     updateAnswerButtons();
     handleAnswerButtonClick();
+    reTriggerAnimation(); 
 });
 answerButtonTwo.addEventListener('click', function() {
     answerTwoValue();
@@ -90,6 +91,7 @@ answerButtonTwo.addEventListener('click', function() {
     displayNextQuestion();
     updateAnswerButtons();
     handleAnswerButtonClick();
+    reTriggerAnimation(); 
 });
 
 // Code for applying values to userData on answer given
@@ -133,13 +135,21 @@ if(previousAnimal !== null) {
     previousAnimalText = document.querySelector("#previousAnimalText");
     previousAnimalImage = document.querySelector("#previousAnimalImage");
     previousText = document.querySelector("#prevText");
+    roundImage = document.querySelector("#roundImage");
 
     previousAnimalText.textContent = previousAnimal[0];
     previousAnimalImage.src = previousAnimal[1];
     previousAnimalImage.style.display = "flex";
     previousText.style.display = "flex";
+    roundImage.style.display = "flex";
 }
 
+// This function adds and removes animation classes to re-trigger the animation on the .card element
+function reTriggerAnimation(element, animationClass) {
+    element.classList.remove(animationClass);
+    void element.offsetWidth;
+    element.classList.add(animationClass);
+}
 
 // This function is called when the user clicks on an answer button. 
 // It updates the progress bar with the calculated percentage of questions answered.
@@ -148,6 +158,12 @@ const totalQuestions = questionsAndAnswers.length;
 function handleAnswerButtonClick() {
     const percentage = (questionIndex / totalQuestions) * 100;
     updateProgressBar(percentage);
+
+    // Re-trigger the fadeIn animation on the .card element
+    const mainCard = document.querySelector('.card');
+    if (mainCard) {
+        reTriggerAnimation(mainCard, 'fadeIn');
+    }
 }
 
 //I really like this method for handling the answer button functions. Let's try to find a way to make this work with all the functions + the one extra that buttonOne has. I've commented it out for now just for the sake of testing. Let's talk about it tonight (Monday).
