@@ -5361,7 +5361,7 @@ button.tag:active,
 }
 
 .title {
-  color: var(--bulma-title-color);
+  color: black;
   font-size: var(--bulma-title-size);
   font-weight: var(--bulma-title-weight);
   line-height: var(--bulma-title-line-height);
