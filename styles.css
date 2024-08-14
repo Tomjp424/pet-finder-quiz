@@ -52,8 +52,8 @@ section {
 .card {
     position: relative;
     display: flex;
-    height: 400px;
-    width: 500px;
+    height: 600px;
+    width: 950px;
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-between;
@@ -65,7 +65,7 @@ section {
 #answerButtonOne{
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 250px;
     height: 180px;
     white-space: normal;
     margin: 20px;
@@ -87,10 +87,6 @@ section {
     bottom: 40px;
 }
 
-
-
-
-  
   .sidebar {
     width: 25%;
     display: flex;
@@ -137,7 +133,6 @@ section {
     text-align: center;
    
 }
-
 
 #endingPage {
     flex-direction: column;
@@ -201,8 +196,10 @@ footer {
     right: 5px;
 }
 
-
-@media screen and (max-width: 1847px) {
+@media screen and (max-width: 1400px) {
+    .card{
+        width: 660px;
+    }
     #answerButtonOne {
         font-size: 1.1rem;
         padding: 0.4em 0.6em;
@@ -261,7 +258,9 @@ footer {
     .sidebar{
         width: 25%;
    }
-    
+   .card{
+    width: 500px;
+    }
     .main-content{
         width: 50%;
     }
