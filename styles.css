@@ -3,6 +3,11 @@ html, body {
     margin: 0;
 }
 
+@keyframes fadeIn{
+    0%{ opacity:0;}
+    100%{ opacity:1;}
+  }
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -44,12 +49,18 @@ section {
   
 }
 
-footer {
+.card {
     position: relative;
-    width: 100%;
-    padding: 1rem 0;
-
-}
+    display: flex;
+    height: 400px;
+    width: 500px;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    animation: fadeIn 3s;
+    word-wrap: break-word;
+    font-size: 2.5rem;
+  }
 
 #answerButtonOne{
     display: flex;
@@ -76,21 +87,9 @@ footer {
     bottom: 40px;
 }
 
-.card {
-    position: relative;
-    display: flex;
-    height: 400px;
-    width: 500px;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-between;
-    animation: fadeIn 3s;
-  }
 
-  @keyframes fadeIn{
-    0%{ opacity:0;}
-    100%{ opacity:1;}
-  }
+
+
   
   .sidebar {
     width: 25%;
@@ -139,10 +138,6 @@ footer {
    
 }
 
-.card{
-    word-wrap: break-word;
-    font-size: 2.5rem;
-}
 
 #endingPage {
     flex-direction: column;
@@ -166,6 +161,13 @@ footer {
 
 .endingButtons {
     margin: 30px 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+
 }
 
 .modal h1,
