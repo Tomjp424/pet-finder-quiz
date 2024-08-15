@@ -6,22 +6,22 @@ const userData = {
 }
 const userDataOrder = ["isExotic", "isFriendly", "isFurry", "isLarge"];
 const animalArray = [
-    {name: "Capybara", image: "./assets/images/capybara.jpg", isExotic: true, isFriendly: true, isFurry: true, isLarge: true},
-    {name: "Lemur", image: "./assets/images/lemur.jpg", isExotic: true, isFriendly: true, isFurry: true, isLarge: false},
-    {name: "Liger", image: "./assets/images/liger.jpg", isExotic: true, isFriendly: false, isFurry: true, isLarge: true},
-    {name: "Mongoose", image: "./assets/images/mongoose.jpg", isExotic: true, isFriendly: false, isFurry: true, isLarge: false},
-    {name: "Blue Whale", image: "./assets/images/blue-whale.jpg", isExotic: true, isFriendly: true, isFurry: false, isLarge: true},
-    {name: "Poison Dart Frog", image: "./assets/images/poison-dart-frog.jpg", isExotic: true, isFriendly: true, isFurry: false, isLarge: false},
-    {name: "Anaconda", image: "./assets/images/anaconda.jpg", isExotic: true, isFriendly: false, isFurry: false, isLarge: true},
-    {name: "Piranha", image: "./assets/images/piranha.jpg", isExotic: true, isFriendly: false, isFurry: false, isLarge: false},
-    {name: "Horse", image: "./assets/images/horse.jpg", isExotic: false, isFriendly: true, isFurry: true, isLarge: true},
-    {name: "Ferret", image: "./assets/images/ferret.png", isExotic: false, isFriendly: true, isFurry: true, isLarge: false},
-    {name: "Boar", image: "./assets/images/boar.jpg", isExotic: false, isFriendly: false, isFurry: true, isLarge: true},
-    {name: "Badger", image: "./assets/images/badger.jpg", isExotic: false, isFriendly: false, isFurry: true, isLarge: false},
-    {name: "Seal", image: "./assets/images/seal.jpg", isExotic: false, isFriendly: true, isFurry: false, isLarge: true},
-    {name: "Gecko", image: "./assets/images/gecko.jpg", isExotic: false, isFriendly: true, isFurry: false, isLarge: false},
-    {name: "Alligator", image: "./assets/images/alligator.jpg", isExotic: false, isFriendly: false, isFurry: false, isLarge: true},
-    {name: "Scorpion", image: "./assets/images/scorpion.jpg", isExotic: false, isFriendly: false, isFurry: false, isLarge: false},
+    {name: "Capybara", image: "./assets/images/capybara.jpg", isExotic: true, isFriendly: true, isFurry: true, isLarge: true, funFact: "Capybara Fun Fact: Capybaras are the world's largest living rodent!"},
+    {name: "Lemur", image: "./assets/images/lemur.jpg", isExotic: true, isFriendly: true, isFurry: true, isLarge: false, funFact: "Lemur Fun Fact: Lemurs are considered the world's oldest primate!"},
+    {name: "Liger", image: "./assets/images/liger.jpg", isExotic: true, isFriendly: false, isFurry: true, isLarge: true, funFact: "Liger Fun Fact: Ligers are real. I know, right? Not just a gag from Napoleon Dynamite."},
+    {name: "Mongoose", image: "./assets/images/mongoose.jpg", isExotic: true, isFriendly: false, isFurry: true, isLarge: false, funFact: "Mongoose Fun Fact: The plural form of mongoose is mongooses, not mongeese!"},
+    {name: "Blue Whale", image: "./assets/images/blue-whale.jpg", isExotic: true, isFriendly: true, isFurry: false, isLarge: true, funFact: "Blue Whale Fun Fact: Blue whales are so big, their tongue alone weighs as much as an elephant!"},
+    {name: "Poison Dart Frog", image: "./assets/images/poison-dart-frog.jpg", isExotic: true, isFriendly: true, isFurry: false, isLarge: false, funFact: "Poison Dart Frog Fun Fact: Domesticated poison dart frogs aren't actually poisonous, because their diet does not contain the alkaloids needed to produce poison!"},
+    {name: "Anaconda", image: "./assets/images/anaconda.jpg", isExotic: true, isFriendly: false, isFurry: false, isLarge: true, funFact: "Anaconda Fun Fact: Anaconda had three sequels, a crossover movie, a 2024 Chinese remake, and a reboot currently in production. That's a lot for a kinda mediocre movie."},
+    {name: "Piranha", image: "./assets/images/piranha.jpg", isExotic: true, isFriendly: false, isFurry: false, isLarge: false, funFact: "Piranha Fun Fact: Piranhas are actually omnivores, despite their reputation as flesh-eating monsters."},
+    {name: "Horse", image: "./assets/images/horse.jpg", isExotic: false, isFriendly: true, isFurry: true, isLarge: true, funFact: "Horse Fun Fact: Horses have a nearly 360-degree field of view. Talk about a Quake pro!"},
+    {name: "Ferret", image: "./assets/images/ferret.png", isExotic: false, isFriendly: true, isFurry: true, isLarge: false, funFact: "Ferret Fun Fact: Ferrets are cool, but wouldn't you rather have a raccoon? Just my opinion..."},
+    {name: "Boar", image: "./assets/images/boar.jpg", isExotic: false, isFriendly: false, isFurry: true, isLarge: true, funFact: "Boar Fun Fact: Packs of wild boars typically have up to 20 members, but historically, some have had over 100!"},
+    {name: "Badger", image: "./assets/images/badger.jpg", isExotic: false, isFriendly: false, isFurry: true, isLarge: false, funFact: "Badger Fun Fact: Badgers don't bring food into their den because they like to keep it clean, which I'm sure you could learn from."},
+    {name: "Seal", image: "./assets/images/seal.jpg", isExotic: false, isFriendly: true, isFurry: false, isLarge: true, funFact: "Seal Fun Fact: The act of a seal bouncing on land to move is called galumphing, and is also how I move on my way to the Ministry of Silly Walks."},
+    {name: "Gecko", image: "./assets/images/gecko.jpg", isExotic: false, isFriendly: true, isFurry: false, isLarge: false, funFact: "Gecko Fun Fact: The guy who plays the Geico Gecko, Jake Wood, also plays the inmate Kill Crazy in the BBC space drama Red Dwarf."},
+    {name: "Alligator", image: "./assets/images/alligator.jpg", isExotic: false, isFriendly: false, isFurry: false, isLarge: true, funFact: "Alligator Fun Fact: An alligator's sex isn't determined by chromosomes like ours, but instead by their temperature during incubation. Weird..."},
+    {name: "Scorpion", image: "./assets/images/scorpion.jpg", isExotic: false, isFriendly: false, isFurry: false, isLarge: false, funFact: `Scorpion Fun Fact: The Scorpion King (2002) features Dwayne "The Rock" Johnson's first leading role.`},
 ] 
 const questionsAndAnswers = [
     {question: "If you're planning a vacation, where would you rather go?", answer1: "Somewhere far away you've never been to before.", answer2: "Somewhere close to home that is familiar and cozy."},
@@ -59,7 +59,7 @@ function displayNextQuestion() {
         questionCard.style.display = "none";
         endingPage.style.display = "flex";
         matchingAnimalImage.src = matchingAnimal[1];
-        matchingAnimalImage.style.display = "flex";
+        funFact.textContent = matchingAnimal[2];
     }
 }
 
@@ -82,7 +82,6 @@ answerButtonOne.addEventListener('click', function() {
     displayNextQuestion();
     updateAnswerButtons();
     handleAnswerButtonClick();
-    reTriggerAnimation(); 
 });
 answerButtonTwo.addEventListener('click', function() {
     answerTwoValue();
@@ -91,7 +90,6 @@ answerButtonTwo.addEventListener('click', function() {
     displayNextQuestion();
     updateAnswerButtons();
     handleAnswerButtonClick();
-    reTriggerAnimation(); 
 });
 
 // Code for applying values to userData on answer given
@@ -113,11 +111,8 @@ function findMatchingAnimal() {
     if (questionIndex === questionsAndAnswers.length) {
         for (let x = 0; x < animalArray.length; x++) {
             if (userData.isExotic === animalArray[x].isExotic && userData.isFriendly === animalArray[x].isFriendly && userData.isFurry === animalArray[x].isFurry && userData.isLarge === animalArray[x].isLarge) {
-                matchingAnimal = [animalArray[x].name, animalArray[x].image];
+                matchingAnimal = [animalArray[x].name, animalArray[x].image, animalArray[x].funFact];
                 localStorage.setItem("previousAnimal", JSON.stringify(matchingAnimal));
-                console.log(matchingAnimal);
-                console.log(userData);
-                console.log(animalArray[x]);
                 break
             }
         }
@@ -145,11 +140,13 @@ if(previousAnimal !== null) {
 }
 
 // This function adds and removes animation classes to re-trigger the animation on the .card element
+/* 
 function reTriggerAnimation(element, animationClass) {
     element.classList.remove(animationClass);
     void element.offsetWidth;
     element.classList.add(animationClass);
 }
+*/
 
 // This function is called when the user clicks on an answer button. 
 // It updates the progress bar with the calculated percentage of questions answered.
@@ -160,10 +157,12 @@ function handleAnswerButtonClick() {
     updateProgressBar(percentage);
 
     // Re-trigger the fadeIn animation on the .card element
+    /*
     const mainCard = document.querySelector('.card');
     if (mainCard) {
         reTriggerAnimation(mainCard, 'fadeIn');
     }
+    */
 }
 
 //I really like this method for handling the answer button functions. Let's try to find a way to make this work with all the functions + the one extra that buttonOne has. I've commented it out for now just for the sake of testing. Let's talk about it tonight (Monday).
