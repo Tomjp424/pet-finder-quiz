@@ -353,4 +353,7 @@ footer {
     .card{
         width: 300px;
     }
+    .questions {
+        margin: 0;
+    }
 }
